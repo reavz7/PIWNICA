@@ -1,0 +1,185 @@
+@import url(reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(to right, #3be725, #131414);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.karta-logowania {
+  width: 450px;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 4rem;
+  border-radius: 10px;
+  position: relative;
+}
+
+.karta-logowania::before {
+  content: "";
+  position: absolute;
+  background: rgba(255, 255, 255, 0.15);
+  inset: 0;
+  transform: rotate(-5deg);
+  z-index: -1;
+}
+
+.karta-logowania-logo {
+  margin-bottom: 2rem;
+}
+
+.karta-logowania-logo img {
+  width: 100px;
+}
+
+.karta-logowania-logo,
+.karta-logowania-header,
+.karta-logowania-footer {
+  text-align: center;
+}
+.karta-logowania a {
+  color: rgb(234, 238, 29);
+  text-decoration: none;
+}
+
+.karta-logowania a:hover {
+  text-decoration: underline;
+}
+
+.karta-logowania-header {
+  margin-bottom: 2rem;
+}
+
+.karta-logowania-header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.karta-logowania-header h1 + div {
+  font-size: calc(1rem * 0.8);
+  opacity: 0.8;
+}
+.karta-logowania-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.karta-logowania-form .form-rzecz {
+  position: relative;
+}
+.karta-logowania-form .form-rzecz .form-rzecz-ikona {
+  position: absolute;
+  top: 0.82rem;
+  left: 1.4rem;
+  font-size: 1.3rem;
+  opacity: 0.4;
+}
+
+.karta-logowania-form .pole-zaznacz {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.karta-logowania-form .form-rzecz-inne {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(1rem * 0.8);
+  margin-bottom: 0.5rem;
+}
+.karta-logowania-footer {
+  margin-top: 1.5rem;
+  font-size: calc(1rem * 0.8);
+}
+
+.karta-logowania input[type="text"],
+.karta-logowania input[type="password"],
+.karta-logowania input[type="email"] {
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 1rem 1.5rem;
+  padding-left: calc(1rem * 3.5);
+  border-radius: 100px;
+  width: 100%;
+  transition: background 0.5s;
+}
+.karta-logowania input:focus {
+  background: white;
+}
+
+.karta-logowania input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: black;
+}
+
+.karta-logowania-form button {
+  background: black;
+  color: white;
+  padding: 1rem;
+  border-radius: 100px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: background 0.5s;
+}
+
+.karta-logowania-form button:hover {
+  background-color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+}
+
+.karta-logowania-social {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.karta-logowania-social > div {
+  opacity: 0.8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: calc(1rem * 0.8);
+}
+
+.karta-logowania-social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.karta-logowania-social-button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  width: 50px;
+  height: 50px;
+  background: rgb(175, 175, 175);
+  border-radius: 100px;
+  transition: all 0.5s;
+}
+
+.karta-logowania button a:hover {
+  background: white;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 2rem 0;
+  }
+  .karta-logowania {
+    width: 280px;
+    padding: 2rem;
+  }
+}

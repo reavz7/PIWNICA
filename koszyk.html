@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Koszyk - PIWNICA</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>PIWNICA - Koszyk</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Strona Główna</a></li>
+          <li><a href="ogloszenia.html">Ogłoszenia</a></li>
+          <li><a href="koszyk.html">Koszyk</a></li>
+          <li><a href="onas.html">O nas</a></li>
+          <li><a href="rozmiary.html">Rozmiary</a></li>
+          <li><a href="informacje.html">Informacje</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="logowanie2.html">Wyloguj</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="total-price"></div>
+    <section>
+      <div id="informacjaodinformatykow">
+        <p>
+          Po usunięciu przedmiotu odśwież stronę w celu zakutalizowania ceny
+          całkowitej, za utrudnienia przepraszamy.
+        </p>
+      </div>
+    </section>
+    <section class="main-content">
+      <div id="cart-items"></div>
+      <div id="customer-details">
+        <h2>WPISZ SWOJE DANE DOSTAWY:</h2>
+        <label for="address">Adres zamieszkania:</label>
+        <input type="text" id="address" placeholder="Wpisz swój adres" />
+
+        <label for="phone">Numer telefonu:</label>
+        <input type="tel" id="phone" placeholder="Wpisz swój numer telefonu" />
+
+        <a href="zamowienie.png" download="zamowienie.png">
+          <button>Zamów</button>
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 PIWNICA Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+    <!--- tą częśc kodu wykonał chatgpt, nie jest on mój, ponieważ nie posiadam wiedzy na temat javascripta a jedynie html i css, zostało to stworzone
+        z czystej ciekawosci jak dziala js --->
+
+    <script src="script.js"></script>
+    <script>
+      if (typeof Storage !== "undefined") {
+        const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+
+        const cartContainer = document.getElementById("cart-items");
+        cartItems.forEach((item, index) => {
+          if (item && item.type && item.price && item.size) {
+            const itemElement = document.createElement("div");
+            itemElement.textContent = `Typ: ${item.type}, Rozmiar: ${item.size}, Cena: ${item.price}`;
+            const removeButton = document.createElement("button");
+            removeButton.textContent = "Usuń";
+            removeButton.addEventListener("click", () =>
+              removeItemFromCart(item, index)
+            );
+            itemElement.appendChild(removeButton);
+            cartContainer.appendChild(itemElement);
+          } else {
+            console.error(
+              "Błąd: Nieprawidłowe właściwości przedmiotu w koszyku."
+            );
+          }
+        });
+      } else {
+        alert(
+          "Twoja przeglądarka nie obsługuje funkcji localStorage, więc nie można wyświetlić zawartości koszyka."
+        );
+      }
+
+      function removeItemFromCart(item, index) {
+        let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+
+        if (index !== undefined && index >= 0 && index < cartItems.length) {
+          cartItems.splice(index, 1);
+
+          localStorage.setItem("cartItems", JSON.stringify(cartItems));
+
+          updateCartDisplay();
+        }
+      }
+
+      function updateCartDisplay() {
+        const cartContainer = document.getElementById("cart-items");
+        cartContainer.innerHTML = "";
+
+        const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+
+        cartItems.forEach((item, index) => {
+          if (item.type && item.price && item.size) {
+            const sizeInfo = item.size ? `, Rozmiar: ${item.size}` : "";
+            const itemElement = document.createElement("div");
+            itemElement.textContent = `Typ: ${item.type}${sizeInfo}, Cena: ${item.price}`;
+            const removeButton = document.createElement("button");
+            removeButton.textContent = "Usuń";
+            removeButton.addEventListener("click", () =>
+              removeItemFromCart(item, index)
+            );
+            itemElement.appendChild(removeButton);
+            cartContainer.appendChild(itemElement);
+          } else {
+            alert(
+              "Nie udało się wyświetlić przedmiotu w koszyku. Sprawdź, czy przedmiot ma poprawne właściwości."
+            );
+          }
+        });
+      }
+
+      updateCartDisplay();
+    </script>
+  </body>
+</html>

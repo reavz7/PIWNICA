@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LISTA UŻYTKOWNIKÓW - PIWNICA</title>
+    <link rel="stylesheet" href="listauzytk.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>PIWNICA - LISTA UŻYTKOWNIKÓW</h1>
+      <nav>
+        <ul>
+          <li><a href="statystyki.html">Statystyki</a></li>
+          <li><a href="listapostow.html">Lista ogłoszeń</a></li>
+          <li><a href="listauzytk.html">Lista użytkowników</a></li>
+          <li><a href="edycjauzytk.html">Edycja użytkowników</a></li>
+          <li><a href="logowanie2.html">Wyloguj</a></li>
+        </ul>
+      </nav>
+      <div class="szukanie">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Szukaj po imieniu..."
+        />
+        <button onclick="searchUsers()">Szukaj</button>
+      </div>
+    </header>
+
+    <section class="user-container">
+      <div class="user" data-name="Marta">
+        <p><strong>Imię:</strong> Marta</p>
+        <p><strong>Nazwisko:</strong> Nowak</p>
+        <p><strong>Email:</strong> marta.nowak@example.com</p>
+        <p><strong>Telefon:</strong> 111-222-333</p>
+        <p>
+          <strong>Krótka notatka bio:</strong> Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit.
+        </p>
+      </div>
+
+      <div class="user" data-name="Krzysztof">
+        <p><strong>Imię:</strong> Krzysztof</p>
+        <p><strong>Nazwisko:</strong> Kowalski</p>
+        <p><strong>Email:</strong> krzysztof.kowalski@example.com</p>
+        <p><strong>Telefon:</strong> 444-555-666</p>
+        <p>
+          <strong>Krótka notatka bio:</strong> Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit.
+        </p>
+      </div>
+
+      <div class="user" data-name="Krzysztof2">
+        <p><strong>Imię:</strong> Krzysztof</p>
+        <p><strong>Nazwisko:</strong> Skywalker</p>
+        <p><strong>Email:</strong> krzysztof.kowalski@example.com</p>
+        <p><strong>Telefon:</strong> 444-555-666</p>
+        <p>
+          <strong>Krótka notatka bio:</strong> Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit.
+        </p>
+      </div>
+
+      <div class="user" data-name="Agnieszka">
+        <p><strong>Imię:</strong> Agnieszka</p>
+        <p><strong>Nazwisko:</strong> Szymańska</p>
+        <p><strong>Email:</strong> agnieszka.szymanska@example.com</p>
+        <p><strong>Telefon:</strong> 777-888-999</p>
+        <p>
+          <strong>Krótka notatka bio:</strong> Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit.
+        </p>
+      </div>
+
+      <!-- Dodaj resztę użytkowników tutaj -->
+
+      <div class="user" data-name="Michał">
+        <p><strong>Imię:</strong> Michał</p>
+        <p><strong>Nazwisko:</strong> Wiśniewski</p>
+        <p><strong>Email:</strong> michal.wisniewski@example.com</p>
+        <p><strong>Telefon:</strong> 333-444-555</p>
+        <p>
+          <strong>Krótka notatka bio:</strong> Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit.
+        </p>
+      </div>
+
+      <div class="user" data-name="Joanna">
+        <p><strong>Imię:</strong> Joanna</p>
+        <p><strong>Nazwisko:</strong> Wójcik</p>
+        <p><strong>Email:</strong> joanna.wojcik@example.com</p>
+        <p><strong>Telefon:</strong> 666-777-888</p>
+        <p>
+          <strong>Krótka notatka bio:</strong> Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit.
+        </p>
+      </div>
+
+      <div class="user" data-name="Andrzej">
+        <p><strong>Imię:</strong> Andrzej</p>
+        <p><strong>Nazwisko:</strong> Adamczyk</p>
+        <p><strong>Email:</strong> andrzej.adamczyk@example.com</p>
+        <p><strong>Telefon:</strong> 999-111-222</p>
+        <p>
+          <strong>Krótka notatka bio:</strong> Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit.
+        </p>
+      </div>
+
+      <div class="user" data-name="Natalia">
+        <p><strong>Imię:</strong> Natalia</p>
+        <p><strong>Nazwisko:</strong> Kwiatkowska</p>
+        <p><strong>Email:</strong> natalia.kwiatkowska@example.com</p>
+        <p><strong>Telefon:</strong> 222-333-444</p>
+        <p>
+          <strong>Krótka notatka bio:</strong> Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit.
+        </p>
+      </div>
+
+      <div class="user" data-name="Paweł">
+        <p><strong>Imię:</strong> Paweł</p>
+        <p><strong>Nazwisko:</strong> Malinowski</p>
+        <p><strong>Email:</strong> pawel.malinowski@example.com</p>
+        <p><strong>Telefon:</strong> 555-666-777</p>
+        <p>
+          <strong>Krótka notatka bio:</strong> Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit.
+        </p>
+      </div>
+
+      <div class="user" data-name="Robert">
+        <p><strong>Imię:</strong> Robert</p>
+        <p><strong>Nazwisko:</strong> Lewandowski</p>
+        <p><strong>Email:</strong> robert.lewandowski@example.com</p>
+        <p><strong>Telefon:</strong> 123-321-555</p>
+        <p>
+          <strong>Krótka notatka bio:</strong> Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit.
+        </p>
+      </div>
+
+      <div class="user" data-name="Anna">
+        <p><strong>Imię:</strong> Anna</p>
+        <p><strong>Nazwisko:</strong> Lewandowska</p>
+        <p><strong>Email:</strong> anna.lewandowska@example.com</p>
+        <p><strong>Telefon:</strong> 987-654-321</p>
+        <p>
+          <strong>Krótka notatka bio:</strong> Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit.
+        </p>
+      </div>
+
+      <div class="user" data-name="Piotr">
+        <p><strong>Imię:</strong> Piotr</p>
+        <p><strong>Nazwisko:</strong> Zieliński</p>
+        <p><strong>Email:</strong> piotr.zielinski@example.com</p>
+        <p><strong>Telefon:</strong> 111-999-777</p>
+        <p>
+          <strong>Krótka notatka bio:</strong> Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit.
+        </p>
+      </div>
+
+      <div class="user" data-name="Justyna">
+        <p><strong>Imię:</strong> Justyna</p>
+        <p><strong>Nazwisko:</strong> Kowalczyk</p>
+        <p><strong>Email:</strong> justyna.kowalczyk@example.com</p>
+        <p><strong>Telefon:</strong> 222-888-444</p>
+        <p>
+          <strong>Krótka notatka bio:</strong> Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 PIWNICA Wszelkie prawa zastrzeżone.</p>
+    </footer>
+  </body>
+</html>
