@@ -1,0 +1,93 @@
+<!-- BEGIN: abpxx6d04wxr -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="dodajprzedmiot.css" />
+  </head>
+  <body>
+    <header>
+      <h1>PIWNICA - DODAJ PRZEDMIOT</h1>
+      <nav>
+        <ul>
+          <li><a href="statystyki.html">Statystyki</a></li>
+          <li><a href="listapostow.html">Lista ogłoszeń</a></li>
+          <li><a href="dodajprzedmiot.html">Dodawanie przedmiotów</a></li>
+          <li><a href="listauzytk.html">Lista użytkowników</a></li>
+          <li><a href="edycjauzytk.html">Edycja użytkowników</a></li>
+          <li><a href="logowanie2.html">Wyloguj</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <h2>Dodaj przedmiot</h2>
+      <form>
+        <div class="form-group">
+          <label for="nazwa">Nazwa:</label>
+          <input type="text" id="nazwa" name="nazwa" />
+        </div>
+
+        <div class="form-group">
+          <label for="cena">Cena:</label>
+          <input type="number" id="cena" name="cena" />
+        </div>
+
+        <div class="rodzaj">
+          <label for="typ">Typ:</label>
+          <input type="radio" id="bluza" name="typ" value="bluza" />
+          <label for="bluza">Bluza</label>
+          <input type="radio" id="buty" name="typ" value="buty" />
+          <label for="buty">Buty</label>
+          <input type="radio" id="uniwersalne" name="typ" value="uniwersalne" />
+          <label for="uniwersalne">Uniwersalne</label>
+        </div>
+
+        <div class="form-group">
+          <label for="rozmiar_buty">Rozmiar butów:</label>
+          <select id="rozmiar_buty" name="rozmiar_buty">
+            <option value="36">36</option>
+            <option value="37">37</option>
+            <option value="38">38</option>
+            <option value="39">39</option>
+            <option value="40">40</option>
+            <option value="41">41</option>
+            <option value="42">42</option>
+            <option value="43">43</option>
+            <option value="44">44</option>
+            <option value="45">45</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="rozmiar_ubrania">Rozmiar ubrań:</label>
+          <select id="rozmiar_ubrania" name="rozmiar_ubrania">
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="zdjecie">Zdjęcie:</label>
+          <input type="file" id="zdjecie" name="zdjecie" />
+        </div>
+        <button class="guzikdodaj" type="submit">DODAJ</button>
+      </form>
+    </div>
+
+    <div class="form-container">
+      <h2 class="usuwanie">Usuń przedmiot</h2>
+      <form>
+        <div class="form-group">
+          <label for="id_przedmiotu">ID Przedmiotu:</label>
+          <input type="number" id="id_przedmiotu" name="id_przedmiotu" />
+        </div>
+        <button class="guzikdodaj guzikusun" type="submit">USUŃ</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,126 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url("tlo/zdjecietla.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+header {
+  background: url("tlo/tlogora.jpg") no-repeat center center;
+  background-size: cover;
+  color: rgb(157, 152, 152);
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+h2 {
+  color: yellow;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #989302;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #2e2e2e;
+  border: 1px solid #bdba00;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.form-group label {
+  color: rgb(255, 238, 0);
+  display: inline-block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+
+.rodzaj {
+  color: rgb(255, 238, 0);
+  width: calc(100% - 20px);
+  display: inline-block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+
+.form-group input,
+.form-group select {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 3px solid #383838;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form-group input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+.guzikdodaj {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  background-color: #ddbc00;
+  color: rgb(0, 0, 0);
+  width: 100%;
+  cursor: pointer;
+}
+
+.guzikdodaj:hover {
+  background-color: #00af09;
+  color: #ffffff;
+  transition: 0.5s;
+}
+/* Pozostała część CSS bez zmian */
+
+/* Styl dla drugiego formularza */
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #2e2e2e;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.usuwanie {
+  color: red;
+}

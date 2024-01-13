@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kontakt - PIWNICA</title>
-    <link rel="stylesheet" href="kontakt.css" />
+    <title>DODAWANIE POSTA - PIWNICA</title>
+    <link rel="stylesheet" href="dodawanieposta.css" />
   </head>
-
   <body>
     <header>
-      <h1>PIWNICA - Kontakt</h1>
+      <h1>PIWNICA - Dodawnie posta</h1>
       <nav>
         <ul>
           <li><a href="index.html">Strona Główna</a></li>
@@ -25,20 +24,19 @@
       </nav>
     </header>
 
-    <section class="contact-info">
-      <h2>Skontaktuj się z nami</h2>
-      <p>
-        Adres e-mail:
-        <a class="kontaktowymail" href="mailto:stepienmontaz@gmail.com"
-          >stepienmontaz@gmail.com</a
-        >
-      </p>
-      <p>Numer telefonu: 787 652 240</p>
-      <p>Adres: ul. Wschodnia 49, 90-267 Łódź</p>
-    </section>
+    <div class="container">
+      <h2>Dodaj Nowy Post</h2>
+      <form>
+        <label for="title">Tytuł:</label>
+        <input type="text" id="title" name="title" required />
 
-    <footer>
-      <p>&copy; 2023 PIWNICA Wszelkie prawa zastrzeżone.</p>
-    </footer>
+        <label for="content">Treść:</label>
+        <textarea id="content" name="content" rows="4" required></textarea>
+
+        <button type="submit">Dodaj Post</button>
+      </form>
+    </div>
+
+    <footer>&copy; 2024 Twoja Strona. Wszelkie prawa zastrzeżone.</footer>
   </body>
 </html>
