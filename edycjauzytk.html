@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EDYCJA UŻYTKOWNIKA - PIWNICA</title>
+    <link rel="stylesheet" href="edycjauzytk.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>PIWNICA - EDYCJA UŻYTKOWNIKA</h1>
+      <nav>
+        <ul>
+          <li><a href="statystyki.html">Statystyki</a></li>
+          <li><a href="listapostow.html">Lista ogłoszeń</a></li>
+          <li><a href="dodajprzedmiot.html">Dodawanie przedmiotów</a></li>
+          <li><a href="listauzytk.html">Lista użytkowników</a></li>
+          <li><a href="edycjauzytk.html">Edycja użytkowników</a></li>
+          <li><a href="logowanie2.html">Wyloguj</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="main-content">
+      <div class="user-container">
+        <div class="user">
+          <h2>EDYTUJ UŻYTKOWNIKA</h2>
+          <form action="zmianadanych.png">
+            <label for="userSelect">WYBIERZ UŻYTKOWNIKA:</label>
+            <select id="userSelect" name="userSelect">
+              <option value="user1">Marta Nowak</option>
+              <option value="user2">Krzysztof Kowalski</option>
+              <option value="user3">Krzysztof Skywalker</option>
+              <option value="user4">Agnieszka Szymańska</option>
+              <option value="user5">Michał Wiśniewski</option>
+              <option value="user6">Joanna Wójcik</option>
+              <option value="user7">Andrzej Adamczyk</option>
+              <option value="user8">Natalia Kwiatkowska</option>
+              <option value="user9">Paweł Malinowski</option>
+              <option value="user10">Robert Lewandowski</option>
+              <option value="user11">Anna Lewandowska</option>
+              <option value="user12">Piotr Zieliński</option>
+              <option value="user13">Justyna Kowalczyk</option>
+            </select>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="password">Hasło:</label>
+            <input type="password" id="password" name="password" required />
+
+            <label for="firstName">Imie:</label>
+            <input type="text" id="firstName" name="firstName" required />
+
+            <label for="lastName">Nazwisko:</label>
+            <input type="text" id="lastName" name="lastName" required />
+            
+            
+            <label for="zdjecie">Zdjęcie:</label>
+            <input type="file" id="zdjecie" name="zdjecie" />
+              
+              
+
+            <label for="phoneNumber">Numer telefonu:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required />
+
+            <button>POTWIERDŹ ZMIANY</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2023 PIWNICA Wszelkie prawa zastrzeżone.</p>
+    </footer>
+  </body>
+</html>
