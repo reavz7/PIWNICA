@@ -22,11 +22,11 @@ nav ul {
 
 nav ul li {
   display: inline;
-  margin-right: 10px; /* Zmniejszono margines */
+  margin-right: 10px; 
 }
 
 nav ul li:last-child {
-  margin-right: 0; /* Wyłączono margines dla ostatniego elementu, aby uniknąć nadmiaru */
+  margin-right: 0; 
 }
 
 nav ul li a {
@@ -49,22 +49,50 @@ nav ul li a:hover {
 }
 
 .post {
-    background-color: #ffffff;
-    border: 3px solid rgb(0, 0, 0);
+    background-color: #c2a500;
+    border: 6px solid rgb(99, 99, 99);
     padding: 20px;
     margin-bottom: 20px;
     width: 80%; 
     max-width: 600px; 
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    color: rgb(128, 128, 0);
+    color: rgb(0, 0, 0);
+    
+    text-align: center;
 }
 
 .post h3 {
-    color: #11100f;
+    color: #000000;
+    text-align: center;
 }
 
 .author {
-    color: #777;
+    color: #913838;
+    
+    text-align: center;
+}
+
+.kontaktujsie{
+  
+  border: 1px solid #3d3d3d;
+  background: none;
+  background-color: #ebcc05;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: sans-serif;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.kontaktujsie:hover {
+  font-family: sans-serif;
+  color: #fff;
+  transform: scale(1.05);
+  background-color: black;
 }
 
 footer {

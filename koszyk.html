@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Koszyk - PIWNICA</title>
     <link rel="stylesheet" href="styles.css" />
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/shopping-cart.css' rel='stylesheet'>
   </head>
 
   <body>
     <header>
-      <h1>PIWNICA - Koszyk</h1>
+      <h1>PIWNICA - Koszyk </h1>
       <nav>
         <ul>
           <li><a href="index.html">Strona Główna</a></li>
@@ -24,7 +25,7 @@
         </ul>
       </nav>
     </header>
-
+    
     <div id="total-price"></div>
     <section>
       <div id="informacjaodinformatykow">
@@ -37,12 +38,12 @@
     <section class="main-content">
       <div id="cart-items"></div>
       <div id="customer-details">
-        <h2>WPISZ SWOJE DANE DOSTAWY:</h2>
+        <h2 class="wpiszdane">WPISZ SWOJE DANE DOSTAWY:</h2>
         <label for="address">Adres zamieszkania:</label>
         <input type="text" id="address" placeholder="Wpisz swój adres" />
 
         <label for="phone">Numer telefonu:</label>
-        <input type="tel" id="phone" placeholder="Wpisz swój numer telefonu" />
+        <input type="tel" id="address" placeholder="Wpisz swój numer telefonu" />
 
         <form action="zamowienie.png">
           <button>Zamów</button>
