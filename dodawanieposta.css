@@ -8,16 +8,9 @@ body {
 }
 
 .container {
-  max-width: 960px;
-  margin: 0 auto;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 10px;
-  border-radius: 50px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  max-width: 600px; /* Ustawia maksymalną szerokość kontenera, aby uniknąć zbytniego rozciągania */
+  margin: 0 auto; /* Centralizuje kontener na stronie */
+  margin-top: 50px;
 }
 
 @media (max-width: 768px) {
@@ -65,6 +58,56 @@ h3 {
   color: #ffd700;
   border-bottom: 2px solid #ffd700;
   padding-bottom: 10px;
+  text-align: center;
+}
+
+
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: rgb(231, 231, 0);
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+input,
+textarea {
+  
+  text-align: center;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  resize: none; 
+}
+button {
+  border: 1px solid #ebcc05;
+  background: none;
+  background-color: #ebcc05;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: sans-serif;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
+@media screen and (max-width: 600px) {
+  input,
+  textarea {
+    margin-bottom: 8px;
+  }
+}
+button:hover {
+  color: #fff;
+  transform: scale(1.05);
+  background-color: black;
+  font-family: sans-serif;
 }
 
 footer {
@@ -75,44 +118,4 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-}
-
-/* Dodano stylizację dla formularza */
-form {
-  margin-top: 20px;
-}
-
-label {
-  color: white;
-  font-size: 18px;
-  margin-bottom: 8px;
-  display: block;
-}
-
-input {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 15px;
-  box-sizing: border-box;
-}
-
-textarea {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 15px;
-  box-sizing: border-box;
-}
-
-button {
-  background-color: #ffd700;
-  color: black;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-button:hover {
-  background-color: #989302;
 }

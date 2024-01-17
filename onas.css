@@ -72,7 +72,6 @@ footer {
   width: 100%;
 }
 
-/* Media queries dla responsywności */
 @media screen and (max-width: 600px) {
   section.content {
     width: 100%;

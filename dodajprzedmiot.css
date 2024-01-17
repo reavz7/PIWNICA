@@ -4,6 +4,7 @@ body {
   padding: 0;
   background: url("tlo/zdjecietla.jpg") no-repeat center center fixed;
   background-size: cover;
+  
 }
 
 header {
@@ -19,11 +20,18 @@ nav ul {
   list-style-type: none;
   padding: 0;
 }
+
 h2 {
+  margin: 5px;
   color: yellow;
   font-weight: bold;
   font-family: Arial, sans-serif;
 }
+
+.usuwanie {
+  color: yellow;
+}
+
 nav ul li {
   display: inline;
   margin-right: 20px;
@@ -40,17 +48,24 @@ nav ul li a:hover {
 }
 
 .container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #2e2e2e;
-  border: 1px solid #bdba00;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #FFD700;
+  padding: 5vw; 
+  margin: 2.5vw auto;
   border-radius: 5px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+  max-width: 600px; 
+  margin-bottom: 100%;
+  border:solid 1px;
+}
+
+@media screen and (min-width: 600px) {
+  
+  .container {
+    padding: 20px;
+    margin: 10px auto; 
+    border-radius: 10px;
+  }
 }
 
 .form-group {
@@ -89,38 +104,72 @@ nav ul li a:hover {
   color: white;
   cursor: pointer;
 }
-
-.guzikdodaj {
-  font-family: Arial, sans-serif;
-  font-weight: bold;
-  font-size: 24px;
-  background-color: #ddbc00;
-  color: rgb(0, 0, 0);
-  width: 100%;
-  cursor: pointer;
+.form-group input[type="file"] {
+  display: none; 
 }
+
+.zdjecie2{
+
+border:solid 1px;
+padding: 1px;
+justify-content: center;
+text-decoration: underline;
+height: 16px;
+width: 330px;
+padding: 0%;
+margin-left: auto;
+margin-right: auto;
+
+
+}
+.guzikdodaj {
+  text-transform: uppercase;
+  border: 1px solid #ebcc05;
+  background: none;
+  background-color: #ebcc05;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif; 
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.guzikusun {
+  text-transform: uppercase;
+  border: 1px solid #ebcc05;
+  background: none;
+  background-color: #ebcc05;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif; 
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+}
+
 
 .guzikdodaj:hover {
   background-color: #00af09;
-  color: #ffffff;
-  transition: 0.5s;
+  border-color: black;
 }
-/* Pozostała część CSS bez zmian */
 
-/* Styl dla drugiego formularza */
-.form-container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #2e2e2e;
-  border: 1px solid #000000;
-  border-radius: 5px;
+.guzikusun:hover {
+  background-color: red;
+  border-color: black;
+}
+
+footer {
+  background-color: #333;
+  color: white;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.usuwanie {
-  color: red;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }

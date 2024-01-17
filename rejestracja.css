@@ -4,7 +4,7 @@
 body {
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
-  background: linear-gradient(to right, #161616, #4e5307);
+  background: linear-gradient(to right, #002958, #2c2c2c);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,9 +45,7 @@ body {
   text-decoration: none;
 }
 
-.karta-logowania a:hover {
-  text-decoration: underline;
-}
+
 
 .karta-logowania-header {
   margin-bottom: 2rem;
@@ -69,6 +67,17 @@ body {
   gap: 1.5rem;
 }
 
+.powrot p{
+    color: rgb(84, 85, 71);
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+.powrot p:hover{
+
+    text-decoration: underline;
+}
 .karta-logowania-form .form-rzecz {
   position: relative;
 }

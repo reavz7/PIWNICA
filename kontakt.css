@@ -22,11 +22,11 @@ nav ul {
 
 nav ul li {
   display: inline;
-  margin-right: 10px; /* Zmniejszono margines */
+  margin-right: 10px; 
 }
 
 nav ul li:last-child {
-  margin-right: 0; /* Wyłączono margines dla ostatniego elementu, aby uniknąć nadmiaru */
+  margin-right: 0; 
 }
 
 nav ul li a {
@@ -66,7 +66,7 @@ footer {
   border: 10px solid #2b3705;
   padding: 20px;
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
-  max-width: 600px; /* Zwiększenie szerokości */
+  max-width: 600px; 
   margin: auto;
   background-color: #000000;
   position: absolute;

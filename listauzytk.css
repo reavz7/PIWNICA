@@ -50,10 +50,10 @@ nav ul li a:hover {
 
 .szukanie {
     position: absolute;
-    top: 80%; /* Zmieniona wartość top */
+    top: 80%; 
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 40px; /* Zmieniona wartość margin-top */
+    margin-top: 40px; 
 }
 
 #searchInput {
@@ -104,7 +104,7 @@ button {
     margin-bottom: 100px;
 }
 .user {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(56, 56, 56, 0.7);
     color: #FFD700;
     padding: 20px;
     margin: 10px;

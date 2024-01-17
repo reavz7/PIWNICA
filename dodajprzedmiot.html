@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>PIWNICA - DODAJ PRZEDMIOT</title>
     <link rel="stylesheet" href="dodajprzedmiot.css" />
   </head>
   <body>
@@ -23,6 +23,7 @@
     </header>
     <div class="container">
       <h2>Dodaj przedmiot</h2>
+      <h2 class="usuwanie">Lub usuń po nazwie</h2>
       <form>
         <div class="form-group">
           <label for="nazwa">Nazwa:</label>
@@ -70,24 +71,20 @@
             <option value="XL">XL</option>
           </select>
         </div>
-
+        <div class="zdjecie2">
         <div class="form-group">
-          <label for="zdjecie">Zdjęcie:</label>
+          <label for="zdjecie">KLIKNIJ MNIE, ŻEBY WYBRAĆ ZDJĘCIE</label>
           <input type="file" id="zdjecie" name="zdjecie" />
         </div>
+        </div>
         <button class="guzikdodaj" type="submit">DODAJ</button>
+        <button class="guzikusun" type="submit">USUŃ</button>
       </form>
     </div>
 
-    <div class="form-container">
-      <h2 class="usuwanie">Usuń przedmiot</h2>
-      <form>
-        <div class="form-group">
-          <label for="id_przedmiotu">ID Przedmiotu:</label>
-          <input type="number" id="id_przedmiotu" name="id_przedmiotu" />
-        </div>
-        <button class="guzikdodaj guzikusun" type="submit">USUŃ</button>
-      </form>
-    </div>
+    
   </body>
+  <footer>
+    <p>&copy; 2023 PIWNICA Wszelkie prawa zastrzeżone.</p>
+</footer>
 </html>
