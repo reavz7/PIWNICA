@@ -5,19 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EDYCJA UŻYTKOWNIKA - PIWNICA</title>
     <link rel="stylesheet" href="edycjauzytk.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   </head>
 
   <body>
     <header>
-      <h1>PIWNICA - EDYCJA UŻYTKOWNIKA</h1>
+      <h1>PIWNICA - ADMIN</h1>
       <nav>
         <ul>
-          <li><a href="statystyki.html">Statystyki</a></li>
-          <li><a href="listapostow.html">Lista ogłoszeń</a></li>
-          <li><a href="dodajprzedmiot.html">Dodawanie przedmiotów</a></li>
-          <li><a href="listauzytk.html">Lista użytkowników</a></li>
-          <li><a href="edycjauzytk.html">Edycja użytkowników</a></li>
-          <li><a href="logowanie2.html">Wyloguj</a></li>
+          <li><a href="statystyki.html"><span class="material-symbols-outlined">
+bar_chart_4_bars
+</span></a></li>
+          <li><a href="listapostow.html"><span class="material-symbols-outlined">
+post
+</span></a></li>
+          <li><a href="dodajprzedmiot.html"><span class="material-symbols-outlined">
+add
+</span></a></li>
+          <li><a href="listauzytk.html"><span class="material-symbols-outlined">
+group
+</span></a></li>
+          <li><a href="edycjauzytk.html"><span class="material-symbols-outlined">
+edit
+</span></a></li>
+          <li><a href="logowanie2.html"><span class="material-symbols-outlined">
+logout
+</span></a></li>
         </ul>
       </nav>
     </header>
@@ -31,7 +44,7 @@
             <select id="userSelect" name="userSelect">
               <option value="user1">Marta Nowak</option>
               <option value="user2">Krzysztof Kowalski</option>
-              <option value="user3">Krzysztof Skywalker</option>
+              <option value="user3">Krzysztof Skywalker</option> 
               <option value="user4">Agnieszka Szymańska</option>
               <option value="user5">Michał Wiśniewski</option>
               <option value="user6">Joanna Wójcik</option>
@@ -59,7 +72,9 @@
             <label for="zdjecie">Zdjęcie:</label>
             <input type="file" id="zdjecie" name="zdjecie" />
               
-              
+              <label for="phoneNumber">Krótka notatka bio:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required />
+
 
             <label for="phoneNumber">Numer telefonu:</label>
             <input type="tel" id="phoneNumber" name="phoneNumber" required />

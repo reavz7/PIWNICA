@@ -87,7 +87,7 @@ function updateCartDisplay() {
     });
 
     // Wyświetl całkowitą cenę na stronie
-    totalPriceContainer.textContent = `Cena całkowita: ${totalPrice} PLN `; // Zakładam, że używasz polskiej waluty
+    totalPriceContainer.textContent = `Cena całkowita:  ${totalPrice} PLN `; // Zakładam, że używasz polskiej waluty
     
 }
 
