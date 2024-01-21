@@ -21,16 +21,8 @@ nav ul {
   padding: 0;
 }
 
-h2 {
-  margin: 5px;
-  color: yellow;
-  font-weight: bold;
-  font-family: Arial, sans-serif;
-}
 
-.usuwanie {
-  color: yellow;
-}
+
 
 nav ul li {
   display: inline;
@@ -46,25 +38,40 @@ nav ul li a {
 nav ul li a:hover {
   color: #989302;
 }
+h2 {
+  margin: 5px;
+  color: rgb(202, 179, 116);
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
 
+.usuwanie {
+  color: rgb(202, 179, 116);
+}
 .container {
   background-color: rgba(0, 0, 0, 0.7);
-  color: #FFD700;
-  padding: 5vw; 
+  color: #ffffff;
+  padding: 1vw; 
   margin: 2.5vw auto;
   border-radius: 5px;
   text-align: center;
   max-width: 600px; 
-  margin-bottom: 100%;
-  border:solid 1px;
+  margin-bottom: 50%;
+  border: 1px solid #9b8600;
 }
 
 @media screen and (min-width: 600px) {
   
   .container {
-    padding: 20px;
-    margin: 10px auto; 
-    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+  padding: 1vw; 
+  margin: 2.5vw auto;
+  border-radius: 5px;
+  text-align: center;
+  max-width: 600px; 
+  margin-bottom: 50%;
+  border: 1px solid #9b8600;
   }
 }
 
@@ -74,7 +81,7 @@ nav ul li a:hover {
 }
 
 .form-group label {
-  color: rgb(255, 238, 0);
+  color: rgb(255, 255, 255);
   display: inline-block;
   font-weight: bold;
   margin-bottom: 5px;
@@ -82,7 +89,7 @@ nav ul li a:hover {
 }
 
 .rodzaj {
-  color: rgb(255, 238, 0);
+  color:  rgb(202, 179, 116);
   width: calc(100% - 20px);
   display: inline-block;
   font-weight: bold;
@@ -123,13 +130,12 @@ margin-right: auto;
 
 }
 .guzikdodaj {
-  text-transform: uppercase;
-  border: 1px solid #ebcc05;
+  border: 1px solid #9b8600;
   background: none;
-  background-color: #ebcc05;
+  color: rgb(202, 179, 116);
   padding: 10px 20px;
   font-size: 20px;
-  font-family: "Montserrat", sans-serif; 
+  font-family: sans-serif;
   cursor: pointer;
   margin: 10px;
   transition: 0.8s;
@@ -139,29 +145,32 @@ margin-right: auto;
 
 
 .guzikusun {
-  text-transform: uppercase;
-  border: 1px solid #ebcc05;
+  border: 1px solid #9b8600;
   background: none;
-  background-color: #ebcc05;
+  color: rgb(202, 179, 116);
   padding: 10px 20px;
   font-size: 20px;
-  font-family: "Montserrat", sans-serif; 
+  font-family: sans-serif;
   cursor: pointer;
   margin: 10px;
-  transition: 0.5s;
+  transition: 0.8s;
   position: relative;
   overflow: hidden;
 }
 
 
 .guzikdodaj:hover {
-  background-color: #00af09;
-  border-color: black;
+  font-family: sans-serif;
+  color: #fff;
+  transform: scale(1.05);
+  background-color: rgb(19, 97, 0);
 }
 
 .guzikusun:hover {
-  background-color: red;
-  border-color: black;
+  font-family: sans-serif;
+  color: #fff;
+  transform: scale(1.05);
+  background-color: rgb(126, 0, 0);
 }
 
 footer {

@@ -4,7 +4,7 @@
 body {
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
-  background: linear-gradient(to right, #161616, #4e5307);
+  background: linear-gradient(to right, #919191, #000000);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,7 +41,7 @@ body {
   text-align: center;
 }
 .karta-logowania a {
-  color: rgb(234, 238, 29);
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
