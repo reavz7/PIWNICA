@@ -4,7 +4,8 @@
 body {
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
-  background: linear-gradient(to right, #002958, #2c2c2c);
+  
+  background: linear-gradient(to right, #161616, rgb(160, 127, 36));
   display: flex;
   align-items: center;
   justify-content: center;

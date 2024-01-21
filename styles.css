@@ -11,6 +11,15 @@ body {
   margin-left: auto;
   margin-right: auto;
   overflow-x: hidden; 
+  position: relative;
+  line-height: 1.5;
+
+  
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
 }
 
 header {
@@ -20,6 +29,8 @@ header {
   padding: 1rem;
   text-align: center;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 nav ul {
@@ -61,27 +72,80 @@ nav ul li a:hover {
   justify-content: center;
   padding: 20px;
   margin-bottom: 100px;
+  margin-top: 30px;
   border-radius: 10px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  
+}
+.box{
+    position: relative;
+}
+.pozycja{
+    margin: 0; 
+    padding: 0;
+    background: #19161c;
+    height: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 50px;
 }
 
+.input {
+    padding: 10px;
+    width: 80px;
+    height: 40px;
+    background: none;
+    border: 2px solid rgb(202, 179, 116);
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-family: Comic Sans MS;
+    font-size: 26px;
+    color: rgb(202, 179, 116);
+    outline: none;
+    transition: .5s;
+    margin-top: 0;
+    font-family: sans-serif;
+}
+.box:hover input{
+    width: 350px;
+    background: #3b3640;
+    border-radius: 10px;
+}
+.box i{
+    position: absolute;
+    right: 15px;
+    transform: translate(-50%,-50%);
+    font-size: 24px;
+    color: rgb(202, 179, 116);
+    transition: .2s;
+    margin-top: -18px;
+    
+
+}
+.box:hover i{
+    opacity: 0;
+    z-index: -1;
+    
+    
+    margin-top: 50px;
+}
+
+
 #customer-details {
-  width: 1000%;
+  width: 100%;
   padding: 20px;
   box-sizing: border-box;
   text-align: center;
   margin-top: 400px;
-}
-
-#customer-details h2 {
-  margin-bottom: 20px;
-  color: rgba(4, 255, 0, 0.813);
-  text-align: center;
+  
 }
 
 
 #customer-details label {
-  color: rgb(246, 255, 0);
+  color: rgb(202, 179, 116);
 }
 
 #customer-details input {
@@ -94,9 +158,9 @@ nav ul li a:hover {
 }
 
 #customer-details button {
-  border: 1px solid #ebcc05;
+  border: 1px solid #9b8600;
   background: none;
-  background-color: #ebcc05;
+  color: rgb(202, 179, 116);
   padding: 10px 20px;
   font-size: 20px;
   font-family: sans-serif;
@@ -108,10 +172,10 @@ nav ul li a:hover {
 }
 
 #customer-details button:hover {
+  font-family: sans-serif;
   color: #fff;
   transform: scale(1.05);
   background-color: black;
-  font-family: sans-serif;
 }
 
 .clothing-item {
@@ -119,7 +183,9 @@ nav ul li a:hover {
   border: 1px solid #473d00;
   border-radius: 30px;
   margin: 20px;
+  margin-bottom: 20px;
   padding: 15px;
+  padding-top: 30px;
   text-align: center;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -127,23 +193,13 @@ nav ul li a:hover {
 
 .clothing-item img {
   max-width: 85%;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 10px;
 }
 
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  width: 100%;
+
+.clothing-item h2{
+  margin-bottom: 15px;
 }
 
-.clothing-item select {
-  margin-top: 10px;
-  width: 100px;
-  padding: 5px;
-}
 
 .item-price {
   display: block;
@@ -154,6 +210,7 @@ footer {
 .dostepnosc {
   display: block;
   margin-top: 10px;
+  margin-bottom: 5px;
   font-weight: bold;
   color: #23c828;
 }
@@ -166,9 +223,9 @@ footer {
 }
 
 .add-to-cart-button {
-  border: 1px solid #ebcc05;
+  border: 1px solid #9b8600;
   background: none;
-  background-color: #ebcc05;
+  color: rgb(202, 179, 116);
   padding: 10px 20px;
   font-size: 20px;
   font-family: sans-serif;
@@ -198,19 +255,33 @@ footer {
 }
 
 .size-options {
-  margin-top: 10px;
-  width: 120px;
   padding: 8px;
-  border: 5px solid #1f1f1a;
-  border-radius: 5px;
+  border: 1px solid #9b8600;
   appearance: none;
-  background-color: #ebcc05;
+  background: none;
   cursor: pointer;
+  color: rgb(202, 179, 116);
+  text-align: center;
+  height: 35px;
+  width: 60px;
+  margin-left: 5px; 
+  transition: 0.8s;
+}
+
+
+.clothing-item img {
+  max-width: 85%;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
 }
 
 .size-options:hover {
-  border-color: #4caf50;
+  font-family: sans-serif;
+  color: #fff;
+  transform: scale(1.05);
+  background-color: black;
 }
+
 
 .size-options:focus {
   outline: none;
@@ -227,7 +298,7 @@ footer {
   border: 1px solid #000000;
   border-radius: 1px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  color: yellow;
+  color: rgb(202, 179, 116);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif,
     sans-serif;
@@ -248,9 +319,91 @@ footer {
 }
 .wpiszdane{
 
-  color: yellow;
   font-style: italic;
   font-family: sans-serif;
-  -webkit-text-fill-color: yellow;
+  -webkit-text-fill-color: rgb(202, 179, 116);
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #121213;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #776f00;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
 }
 

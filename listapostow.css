@@ -36,7 +36,7 @@ nav ul li a:hover {
 }
 
 .main-content {
-  display: flex;
+  display:flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 20px;
@@ -45,13 +45,21 @@ nav ul li a:hover {
 
 .post {
   width: 300px;
-  background-color: #5e5e5e;
+  background-color:#000000;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #9b8600;
   padding: 20px;
   margin: 20px;
   text-align: left;
   text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.post h3 {
+  color: #9b8600;
+  text-align: center;
+  text-decoration: underline;
 }
 
 .author {
@@ -60,31 +68,34 @@ nav ul li a:hover {
 }
 
 button {
-  background-color: #ffd700;
-  color: black;
+  border: 1px solid #9b8600;
+  background: none;
+  color: rgb(202, 179, 116);
   padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
+  font-size: 20px;
+  font-family: sans-serif;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  margin: 10px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
 }
 .zatwierdzania {
-  background-color: #ffd700;
-  color: black;
+  border: 1px solid #9b8600;
+  background-color: #1b3822;
+  color: rgb(202, 179, 116);
   padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-
   position: relative;
   top: -90px;
 }
 
 button:hover {
-  background-color: #989302;
+  font-family: sans-serif;
+  color: #fff;
+  transform: scale(1.05);
+  background-color: black;
 }
 
 form {
@@ -105,6 +116,8 @@ form textarea {
   top: -90px;
   background-color: #5e5e5e;
 }
+
+
 
 footer {
   background-color: #333;
