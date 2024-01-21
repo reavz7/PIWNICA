@@ -8,6 +8,7 @@
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/shopping-cart.css' rel='stylesheet'>
     
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   </head>
 
   <body>
@@ -15,26 +16,29 @@
       <h1>PIWNICA - Koszyk </h1>
       <nav>
         <ul>
-          <li><a href="index.html">Strona Główna</a></li>
-          <li><a href="ogloszenia.html">Ogłoszenia</a></li>
-          <li><a href="dodawanieposta.html">Dodawanie posta</a></li>
-          <li><a href="koszyk.html">Koszyk</a></li>
-          <li><a href="onas.html">O nas</a></li>
-          <li><a href="rozmiary.html">Rozmiary</a></li>
-          <li><a href="informacje.html">Informacje</a></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
-          <li><a href="logowanie2.html">Wyloguj</a></li>
+            <li><a href="index.html">Strona Główna</a></li>
+            <li><a href="ogloszenia.html">Ogłoszenia</a></li>
+            <li><a href="dodawanieposta.html">Dodawanie posta</a></li>
+            <li><a href="koszyk.html">Koszyk</a></li>
+            <li><a href="onas.html">O nas</a></li>
+            <li><a href="rozmiary.html">Rozmiary</a></li>
+            <li><a href="informacje.html">Informacje</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="logowanie2.html"> <span class="material-symbols-outlined">
+logout
+</span></a></li>
+            
         </ul>
-      </nav>
+    </nav>
     </header>
     
     <div id="total-price"></div>
     <section>
+      
       <div id="informacjaodinformatykow">
-        <p>
-          Po usunięciu przedmiotu odśwież stronę w celu zakutalizowania ceny
-          całkowitej, za utrudnienia przepraszamy.
-        </p>
+        <span class="material-symbols-outlined">
+shopping_cart
+</span>
       </div>
     </section>
     <section class="main-content">
@@ -101,73 +105,6 @@
         z czystej ciekawosci jak dziala js --->
 
     <script src="script.js"></script>
-    <script>
-      if (typeof Storage !== "undefined") {
-        const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
-
-        const cartContainer = document.getElementById("cart-items");
-        cartItems.forEach((item, index) => {
-          if (item && item.type && item.price && item.size) {
-            const itemElement = document.createElement("div");
-            itemElement.textContent = `Typ: ${item.type}, Rozmiar: ${item.size}, Cena: ${item.price}`;
-            const removeButton = document.createElement("button");
-            removeButton.textContent = "Usuń";
-            removeButton.addEventListener("click", () =>
-              removeItemFromCart(item, index)
-            );
-            itemElement.appendChild(removeButton);
-            cartContainer.appendChild(itemElement);
-          } else {
-            console.error(
-              "Błąd: Nieprawidłowe właściwości przedmiotu w koszyku."
-            );
-          }
-        });
-      } else {
-        alert(
-          "Twoja przeglądarka nie obsługuje funkcji localStorage, więc nie można wyświetlić zawartości koszyka."
-        );
-      }
-
-      function removeItemFromCart(item, index) {
-        let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
-
-        if (index !== undefined && index >= 0 && index < cartItems.length) {
-          cartItems.splice(index, 1);
-
-          localStorage.setItem("cartItems", JSON.stringify(cartItems));
-
-          updateCartDisplay();
-        }
-      }
-
-      function updateCartDisplay() {
-        const cartContainer = document.getElementById("cart-items");
-        cartContainer.innerHTML = "";
-
-        const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
-
-        cartItems.forEach((item, index) => {
-          if (item.type && item.price && item.size) {
-            const sizeInfo = item.size ? `, Rozmiar: ${item.size}` : "";
-            const itemElement = document.createElement("div");
-            itemElement.textContent = `Typ: ${item.type}${sizeInfo}, Cena: ${item.price}`;
-            const removeButton = document.createElement("button");
-            removeButton.textContent = "Usuń";
-            removeButton.addEventListener("click", () =>
-              removeItemFromCart(item, index)
-            );
-            itemElement.appendChild(removeButton);
-            cartContainer.appendChild(itemElement);
-          } else {
-            alert(
-              "Nie udało się wyświetlić przedmiotu w koszyku. Sprawdź, czy przedmiot ma poprawne właściwości."
-            );
-          }
-        });
-      }
-
-      updateCartDisplay();
-    </script>
+    
   </body>
 </html>
