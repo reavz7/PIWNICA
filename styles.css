@@ -47,7 +47,7 @@ nav ul li:last-child {
   margin-right: 0; 
 }
 
-nav ul li a {
+nav ul li a { 
   color: white;
   text-decoration: none;
   transition: color 0.3s ease;
@@ -59,10 +59,12 @@ nav ul li a:hover {
 
 #cart-items div {
   margin-bottom: 10px;
-  padding: 10px;
+  padding: 20px;
   border: 1px solid #000000;
-  background-color: #c1e207;
+  background-color: #1c1f0f;  
   font-weight: bold;
+  border-style: solid 52px;
+  border-color: wheat;
 }
 
 .main-content {
@@ -171,12 +173,36 @@ nav ul li a:hover {
   overflow: hidden;
 }
 
+
 #customer-details button:hover {
   font-family: sans-serif;
   color: #fff;
   transform: scale(1.05);
   background-color: black;
+} 
+
+.remove-from-cart-button {
+  border: 1px solid #9b8600;
+  background: none;
+  color: rgb(202, 179, 116);
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: sans-serif;
+  cursor: pointer;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  margin-left: 20px;
 }
+
+.remove-from-cart-button:hover {
+  font-family: sans-serif;
+  color: #fff;
+  transform: scale(1.05);
+  background-color: rgb(150, 65, 65);
+}
+
 
 .clothing-item {
   background: linear-gradient(to right, #070707, #2c2c2c);
@@ -323,6 +349,8 @@ nav ul li a:hover {
   font-family: sans-serif;
   -webkit-text-fill-color: rgb(202, 179, 116);
 }
+
+
 .container{
 	max-width: 1170px;
 	margin:auto;

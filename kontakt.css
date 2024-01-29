@@ -104,6 +104,10 @@ textarea {
   color: #fff;
   transform: scale(1.05);
   background-color: black;}
+  .container{
+    max-width: 1170px;
+    margin:auto;
+  }
 .row{
 	display: flex;
 	flex-wrap: wrap;
