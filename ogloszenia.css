@@ -58,76 +58,104 @@ nav ul li a:hover {
 }
 
 
-.main-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    margin-bottom: 100px;                   
-}
 
-.post {
-    border: 6px solid rgb(99, 99, 99);
-    padding: 20px;
-    margin-bottom: 20px;
-    width: 80%; 
-    max-width: 600px; 
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    color: rgb(212, 212, 212);
-    
-  background-color: black;
-    
-    text-align: center;
-}
 
-.post h3 {
-    color: #ffffff;
-    text-align: center;
-    text-decoration: underline;
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
 }
-
-.author {
-    color: #c5c5c5;
-    
-    text-align: center;
+.posty{
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 100px;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
-
-.kontaktujsie{
-  border: 1px solid #9b8600;
-  background: none;
-  color: rgb(202, 179, 116);
-  padding: 10px 20px;
-  font-size: 20px;
-  font-family: sans-serif;
-  cursor: pointer;
-  margin: 10px;
-  transition: 0.8s;
-  position: relative;
+.card {
+  margin: 20px;
+  border: solid 2px;
+  background-color: #070707;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
   overflow: hidden;
+  width: 300px;
+}
+.card-header img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  min-height: 250px;
 }
 
-
-.kontaktujsie:hover {
-  font-family: sans-serif;
+.tag {
+  background: #cccccc;
+  border-radius: 50px;
+  font-size: 12px;
+  margin: 0;
   color: #fff;
-  transform: scale(1.05);
-  background-color: black;
+  padding: 2px 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.tag-teal {
+  background-color: #47bcd4;
+  margin-bottom: 20px;
+}
+.tag-purple {
+  background-color: #5e76bf;
+  margin-bottom: 20px;
+}
+.tag-pink {
+  background-color: #cd5b9f;
+  margin-bottom: 20px;
+}
+.tag-black {
+  background-color: #000000;
+  margin-bottom: 20px;
+}
+
+.card-body p {
+  font-size: 13px;
+  margin: 0 0 40px;
+}
+.user {
+  display: flex;
+  margin-top: auto;
+}
+
+.user img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.user-info h5 {
+  margin: 0;
+}
+.user-info small {
+  color: #858f00;
 }
 
 
-.section-heading {
-    font-size: 28px;
-    font-weight: bold; 
-    color: rgb(202, 179, 116);
-    text-align: center;
-    margin-bottom: 20px;
-    text-transform: uppercase; 
-}
 
 .container{
 	max-width: 1170px;
 	margin:auto;
 }
+
+
 .row{
 	display: flex;
 	flex-wrap: wrap;
@@ -195,7 +223,6 @@ ul{
 	background-color: #ffffff;
 }
 
-/*responsive*/
 @media(max-width: 767px){
   .footer-col{
     width: 50%;
@@ -205,6 +232,7 @@ ul{
 @media(max-width: 574px){
   .footer-col{
     width: 100%;
+    
 }
 }
 
